@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    tools:context="com.android.joseantonio.fb.MainActivity"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:id="@+id/perfil_iniciado"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingrese a su cuenta de Facebook para Reproducir el video"
+            android:textSize="25dp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/video"
+            android:text="Reproducir video de Youtube"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/perfil_finalizado"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

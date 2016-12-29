@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Proyecto Final</string>
+    <string name="facebook_app_id">580369815499553</string>
+    <string name="banner">ca-app-pub-1463575444328965/3737511535</string>
+    <string name="error_reproduccion">Error en la Reproduccion</string>
+</resources>
